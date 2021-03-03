@@ -11,23 +11,26 @@
 	  <div class="header-container">
 	    <div class="header-logo">
 	      <a href="/" class="logo">
-	        <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="NOEMI">    
+	        <img src="svg/noemi-logo.svg" alt="NOEMI">    
 	      </a>
 	    </div>
 	    <nav class="menu">
+	      <button class="menu-button">
+	      	<span class="menu-button-label">открыть меню</span>
+	      </button>
 	      <ul class="menu-list">
 	        <li class="menu-list-item">
-	          <a href="#0" class="menu-link">главная</a>
+	          <a href="#0" class="menu-link">главная</a></li>
 	        <li class="menu-list-item">
-	          <a href="#0" class="menu-link">посты</a>
+	          <a href="#0" class="menu-link">посты</a></li>
 	        <li class="menu-list-item">
-	          <a href="#0" class="menu-link">статьи</a>
+	          <a href="#0" class="menu-link">статьи</a></li>
 	        <li class="menu-list-item">
-	          <a href="#0" class="menu-link">теги</a>
+	          <a href="#0" class="menu-link">теги</a></li>
 	        <li class="menu-list-item">
-	          <a href="#0" class="menu-link">темы</a>
+	          <a href="#0" class="menu-link">темы</a></li>
 	        <li class="menu-list-item">
-	          <a href="#0" class="menu-link">контакты</a>
+	          <a href="#0" class="menu-link">контакты</a></li>
 	        </li>
 	      </ul>
 	    </nav>
@@ -36,11 +39,60 @@
 	  </h1>
 	</header>
 
-	<div class="content">
+	<section class="trends">
+	  <h2 class="trends-header">сейчас в тренде</h2>
+	  <div class="trends-cards">
+		  <article class="trends-card card-1">
+		  	<div class="trends-card-content">
+		  		<ul class="trends-card-tags">
+		  			<li class="trends-card-tag"><a href="#0" class="trends-tag-link">lifestyle</a></li>
+		  			<li class="trends-card-tag"><a href="#0" class="trends-tag-link">interior</a></li>
+		  		</ul>
+		  		<div class="trends-card-text">
+		  		    <a href="#0" class="trends-card-link">Сейчас в тренде: сад на подоконнике</a>
+		  		</div>
+		  	</div>
+		  </article>
+		  <article class="trends-card card-2">
+		  	<div class="trends-card-content">
+		  		<ul class="trends-card-tags">
+		  			<li class="trends-card-tag"><a href="#0" class="trends-tag-link">food</a></li>
+		  		</ul>
+		  		<div class="trends-card-text">
+		  		    <a href="#0" class="trends-card-link">сыры на красивых картинках из интернета: какие они на вкус?</a>
+		  		</div>
+		  	</div>
+		  </article>
+		  <article class="trends-card card-3">
+		  	<div class="trends-card-content">
+		  		<ul class="trends-card-tags">
+		  			<li class="trends-card-tag"><a href="#0" class="trends-tag-link">lifestyle</a></li>
+		  			<li class="trends-card-tag"><a href="#0" class="trends-tag-link">travel</a></li>
+		  		</ul>
+		  		<div class="trends-card-text">
+		  		    <a href="#0" class="trends-card-link">собираемся в первый поход в горы</a>
+		  		</div>
+		  	</div>
+		  </article>
+		  <article class="trends-card card-4">
+		  	<div class="trends-card-content">
+		  		<ul class="trends-card-tags">
+		  			<li class="trends-card-tag"><a href="#0" class="trends-tag-link">food</a></li>
+		  			<li class="trends-card-tag"><a href="#0" class="trends-tag-link">health</a></li>
+		  		</ul>
+		  		<div class="trends-card-text">
+		  			<a href="#0" class="trends-card-link">Сейчас в тренде: сколько витамина c в лимонах?</a>
+		  		</div>
+		  	</div>
+		  </article>
+	  </div>
+    </section>  
+
+	<div class="content">  	
 	  <main class="main-content">
 	    <div class="articles">
 	      <article class="article">
-	        <img class="article-picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="walking on the beach">
+	        <img class="article-picture" src="images/last-post1.jpg" alt="walking on the beach">
 	        <div class="article-content">
 	          <ul class="tags-main">
 	            <li class="tag-main-item">
@@ -63,7 +115,7 @@
 	        </div>
 	      </article>
 	      <article class="article">
-	        <img class="article-picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="yoga on the beach">
+	        <img class="article-picture" src="images/last-post2.jpg" alt="yoga on the beach">
 	        <div class="article-content">
 	          <ul class="tags-main">
 	            <li class="tag-main-item">
@@ -86,7 +138,7 @@
 	        </div>
 	      </article>
 	      <article class="article">
-	        <img class="article-picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="people on concert">
+	        <img class="article-picture" src="images/last-post3.jpg" alt="people on concert">
 	        <div class="article-content">
 	          <ul class="tags-main">
 	            <li class="tag-main-item">
@@ -108,7 +160,7 @@
 	        </div>
 	      </article>
 	      <article class="article">
-	        <img class="article-picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="food on the table">
+	        <img class="article-picture" src="images/last-post4.jpg" alt="food on the table">
 	        <div class="article-content">
 	          <ul class="tags-main">
 	            <li class="tag-main-item">
@@ -131,7 +183,7 @@
 	        </div>
 	      </article>
 	      <article class="article">
-	        <img class="article-picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="pillow - hangoutspot here">
+	        <img class="article-picture" src="images/last-post5.jpg" alt="pillow - hangoutspot here">
 	        <div class="article-content">
 	          <ul class="tags-main">
 	            <li class="tag-main-item">
@@ -156,29 +208,6 @@
 	          </div>
 	        </div>
 	      </article>
-	      <article class="article">
-	        <img class="article-picture" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="travelers on mointain">
-	        <div class="article-content">
-	          <ul class="tags-main">
-	            <li class="tag-main-item">
-	               <a href="#0" class="tag-main">travel</a>
-	            </li>
-	            <li class="tag-main-item">
-	               <a href="#0" class="tag-main">lifestyle</a>
-	            </li>
-	          </ul>
-	          <h3 class="article-title">
-	            <a href="#0" class="article-title-link">Как первый раз отправиться в горы?</a>
-	          </h3>
-	          <div class="signature">
-	            <time datetime="2019-06-10" class="date">10 июня 2019</time>
-	            <address class="author">Неизвестный автор</address>
-	          </div>
-	          <div class="text">
-	            <p>Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от многих факторов, не только от ваших желаний и интересов.</p>
-	          </div>
-	        </div>
-	      </article>
 	    </div>
 	  </main>
 	  <aside class="sidebar">
@@ -186,21 +215,21 @@
 	      <h2 class="posts-list-header">новые посты</h2>
 	      <div class="posts-list">
 	        <article class="posts-list-item">
-	          <img class="image-sidebar" src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="walking on the beach">
+	          <img class="image-sidebar" src="images/2.jpg" alt="walking on the beach">
 	          <div class="post-content">
 	            <time datetime="2019-06-10" class="post-date">10 июня 2019</time>
 	            <h3><a class="post-header" href="#0">10 мест, ради которых стоит проснуться</a></h3>
 	          </div>  
 	        </article>
 	        <article class="posts-list-item">
-	          <img class="image-sidebar" src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg" alt="yoga on the beach"> 
+	          <img class="image-sidebar" src="images/151.jpg" alt="yoga on the beach"> 
 	          <div class="post-content">
 	            <time datetime="2019-06-10" class="post-date">10 июня 2019</time>
 	            <h3><a class="post-header" href="#0">Йога для домашних</a></h3>
 	          </div>  
 	        </article>
 	        <article class="posts-list-item">
-	          <img class="image-sidebar" src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg" alt="interior">
+	          <img class="image-sidebar" src="images/45.jpg" alt="interior">
 	          <div class="post-content">
 	            <time datetime="2019-06-10" class="post-date">10 июня 2019</time>
 	            <h3><a class="post-header" href="#0">как мы превратили
@@ -209,7 +238,7 @@
 	          </div>  
 	        </article>
 	        <article class="posts-list-item">
-	          <img class="image-sidebar" src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg" alt="food on the table">
+	          <img class="image-sidebar" src="images/501.jpg" alt="food on the table">
 	          <div class="post-content">
 	            <time datetime="2019-06-10" class="post-date">10 июня 2019</time>
 	            <h3><a class="post-header" href="#0">Кулинарный подход
@@ -217,7 +246,7 @@
 	          </div>  
 	        </article>
 	        <article class="posts-list-item">
-	          <img class="image-sidebar" src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg" alt="3 girls hair">
+	          <img class="image-sidebar" src="images/7.jpg" alt="3 girls hair">
 	          <div class="post-content">
 	            <time datetime="2019-06-10" class="post-date">10 июня 2019</time>
 	            <h3><a class="post-header" href="#0">лучшие прически для
@@ -296,6 +325,87 @@
 	    </section>
 	  </aside>
 	</div>
+
+	<section class="shop">
+		<h2 class="shop-header">наши изделия</h2>
+		<div class="shop-products">
+			<article class="product">
+				<picture class="product-image">
+					<source
+                      media="(min-width: 1201px)"
+                      srcset="images/shop-item-desk1.jpg">
+                      <source
+                      media="(min-width: 641px)"
+                      srcset="images/shop-item-tablet1.jpg">
+                      <source
+                      media="(max-width: 640px)"
+                      srcset="images/shop-item-mobil1.jpg">
+				    <img src="images/shop-item-desk1.jpg" alt="pillow">	
+				</picture>
+				<div class="product-info">
+					<h2 class="product-header">Подушки на диван</h2>
+					<div class="product-description">Набор из двух подушек с модными принтами. Видео о создании <a class="product-link" href="#0">здесь</a>.</div>
+					<form class="product-buy-form">
+						<div class="price">
+							<div class="price-old">1000 ₽</div>
+						    <div class="price-new">800 ₽</div>
+						</div>
+						<button class="buy">в магазин</button>
+					</form>
+				</div>
+			</article>
+			<article class="product">
+				<picture class="product-image">
+					<source
+                      media="(min-width: 1201px)"
+                      srcset="images/shop-item-desk2.jpg">
+                      <source
+                      media="(min-width: 641px)"
+                      srcset="images/shop-item-tablet2.jpg">
+                      <source
+                      media="(max-width: 640px)"
+                      srcset="images/shop-item-mobil2.jpg">
+					<img src="images/shop-item-desk2.jpg" alt="rabbit-doll">	
+				</picture>
+				<div class="product-info">
+					<h2 class="product-header">Кукла «Зайчик»</h2>
+					<div class="product-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="product-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</div>
+					<form class="product-buy-form">
+						<div class="price">
+							<div class="price-old price-old-rabbit">3500 ₽</div>
+						    <div class="price-new">3500 ₽</div>
+						</div>
+						<button class="buy">в магазин</button>
+					</form>
+				</div>
+			</article>
+			<article class="product">
+				<picture class="product-image">
+					<source
+                      media="(min-width: 1201px)"
+                      srcset="images/shop-item-desk3.jpg">
+                      <source
+                      media="(min-width: 641px)"
+                      srcset="images/shop-item-tablet3.jpg">
+                      <source
+                      media="(max-width: 640px)"
+                      srcset="images/shop-item-mobil3.jpg">
+					<img src="images/shop-item-desk3.jpg" alt="hexagonal-frame">	
+				</picture>
+				<div class="product-info">
+					<h2 class="product-header">Шестиугольная рамка</h2>
+					<div class="product-description">Необычная рамка для украшения дома из видео <a class="product-link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a></div>
+					<form class="product-buy-form">
+						<div class="price">
+							<div class="price-old">500 ₽</div>
+						    <div class="price-new">400 ₽</div>
+						</div>
+						<button class="buy">в магазин</button>
+					</form>
+				</div>
+			</article>
+		</div>
+	</section>
 
 	<footer class="footer">
 	  <address class="icons">
