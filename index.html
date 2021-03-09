@@ -257,8 +257,10 @@
 	    </section>
 	    <div class="search-form">
 	      <form class="search">
-	        <span class="search-text">Поиск на сайте</span>
-	        <input type="search" class="search-bar" placeholder="Найти..." required>
+	      	<label class="search-label">
+		        <span class="search-text">Поиск на сайте</span>
+		        <input type="search" class="search-bar" placeholder="Найти..." required>
+	    	</label>
 	        <button type="submit" class="search-button"><span class="button-text">search</span></button>
 	      </form>
 	    </div>
@@ -330,7 +332,7 @@
 		<h2 class="shop-header">наши изделия</h2>
 		<div class="shop-products">
 			<article class="product">
-				<picture class="product-image">
+				<picture>
 					<source
                       media="(min-width: 1201px)"
                       srcset="images/shop-item-desk1.jpg">
@@ -339,8 +341,8 @@
                       srcset="images/shop-item-tablet1.jpg">
                       <source
                       media="(max-width: 640px)"
-                      srcset="images/shop-item-mobil1.jpg">
-				    <img src="images/shop-item-desk1.jpg" alt="pillow">	
+                      srcset="images/shop-item-mobile1.jpg">
+				    <img class="product-image" src="images/shop-item-desk1.jpg" alt="pillow">	
 				</picture>
 				<div class="product-info">
 					<h2 class="product-header">Подушки на диван</h2>
@@ -355,7 +357,7 @@
 				</div>
 			</article>
 			<article class="product">
-				<picture class="product-image">
+				<picture>
 					<source
                       media="(min-width: 1201px)"
                       srcset="images/shop-item-desk2.jpg">
@@ -364,8 +366,8 @@
                       srcset="images/shop-item-tablet2.jpg">
                       <source
                       media="(max-width: 640px)"
-                      srcset="images/shop-item-mobil2.jpg">
-					<img src="images/shop-item-desk2.jpg" alt="rabbit-doll">	
+                      srcset="images/shop-item-mobile2.jpg">
+					<img class="product-image" src="images/shop-item-desk2.jpg" alt="rabbit-doll">	
 				</picture>
 				<div class="product-info">
 					<h2 class="product-header">Кукла «Зайчик»</h2>
@@ -380,7 +382,7 @@
 				</div>
 			</article>
 			<article class="product">
-				<picture class="product-image">
+				<picture>
 					<source
                       media="(min-width: 1201px)"
                       srcset="images/shop-item-desk3.jpg">
@@ -389,8 +391,8 @@
                       srcset="images/shop-item-tablet3.jpg">
                       <source
                       media="(max-width: 640px)"
-                      srcset="images/shop-item-mobil3.jpg">
-					<img src="images/shop-item-desk3.jpg" alt="hexagonal-frame">	
+                      srcset="images/shop-item-mobile3.jpg">
+					<img class="product-image" src="images/shop-item-desk3.jpg" alt="hexagonal-frame">	
 				</picture>
 				<div class="product-info">
 					<h2 class="product-header">Шестиугольная рамка</h2>
@@ -431,5 +433,44 @@
 	    <a href="#0" class="copyright-text">Copyright © 2009–2019 City Blog LLC</a>
 	  </div>
 	</footer>
+
+	
+	<!-- <div class="dark-popup-background">
+		<span class="background-popup">background</span>
+	</div>
+	<div class="popup">
+		<h1 class="popup-header">ваш фидбек</h1>
+		<form class="survey">
+			<label class="survey-visit-group">
+				<span class="survey-quest">Как часто вы заходите на сайт?</span>
+				<select class="select-freq">
+					<option selected class="select-freq-option">Почти каждый день</option>
+					<option class="select-freq-option">Раз в несколько дней</option>
+					<option class="select-freq-option">Раз в несколько недель</option>
+					<option class="select-freq-option">Несколько раз в год</option>
+				</select>
+			</label>
+			<div class="survey-email-group">
+				<span class="survey-quest">Вы подписаны на e-mail рассылку?</span>
+				<div class="survey-form-row">
+					<label class="email-radio-group">
+						<input type="radio" name="radio-group" class="email-radio">
+						<span class="email-radio-text">Да</span>
+					</label>
+					<label class="email-radio-group">
+						<input type="radio" name="radio-group" class="email-radio">
+						<span class="email-radio-text">Нет</span>
+					</label>
+				</div>
+			</div>
+			<div class="survey-content-group">
+				<span class="survey-quest">Расскажите, какой контент вы хотели бы видеть
+				на нашем сайте?</span>
+				<textarea placeholder="Может, больше рецептов?" class="survey-content-textarea" required></textarea>
+			</div>
+			<button type="submit" class="send">отправить</button>	
+		</form>
+	</div> -->
+
 </body>
 </html>
