@@ -22,7 +22,7 @@ body {
   background-color: #000000;
   position: relative;
   z-index: 1;
-  padding: 30px 0;
+  padding: 30px 0 100px;
 }
 
 .header:after {
@@ -82,12 +82,12 @@ body {
 .header-title {
   text-transform: uppercase;
   font-size: 45px;
-  line-height: 75px;
+  line-height: 1.6em;
   color: #ffffff;
   font-weight: 700;
   
   text-align: center;
-  margin: 115px auto 100px;
+  margin: 115px auto 0;
   width: 690px;
 }
 
@@ -104,7 +104,7 @@ body {
   width: 100%;
   text-align: center;
   position: relative;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 .trends-header:after,
@@ -132,6 +132,7 @@ body {
   background-size: cover;
   position: relative;
   z-index: 1;
+  padding: 15px 1.2%;
 }
 
 .trends-card:after {
@@ -170,7 +171,6 @@ body {
 .trends-card-content {
   padding: 35px 7.5%;
   border: 3px solid #b59f5b;
-  margin: 15px 5%;
 }
 
 .trends-card-tags{
@@ -186,6 +186,10 @@ body {
   margin-right: 20px;
 }
 
+.trends-card-tag:last-child {
+  margin-right: 0;
+}
+
 .trends-tag-link {
   text-decoration: none;
   text-transform: uppercase;
@@ -199,7 +203,7 @@ body {
 }
 
 .trends-card-text {
-  padding-top: 5px;
+  margin-top: 5px;
 }
 
 .trends-card-link {
@@ -268,7 +272,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2em;
   color: #b59f5b;
   font-weight: 700;
 }
@@ -281,7 +285,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2em;
   color: #0f0d0e;
   font-weight: 700;
   display: block;
@@ -294,12 +298,11 @@ body {
 
 .signature {
   display: flex;
-  margin-top: 10px;  
+  margin-top: 35px;  
 }
 
 .date {
   font-size: 12px;
-  line-height: 40px;
   color: #888888;
   font-weight: 400;
   margin-right: 13px;
@@ -308,7 +311,6 @@ body {
 .author {
   font-size: 12px;
   font-style: normal;
-  line-height: 40px;
   color: #000000;
   font-weight: 700;
 }
@@ -320,7 +322,7 @@ body {
   overflow: hidden;
   
   font-size: 15px;
-  line-height: 22px;
+  line-height: 1.5em;
   color: #0f0d0e;
   font-weight: 400;
   margin-top: 37px;
@@ -341,7 +343,7 @@ body {
 .themes-header {
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.5em;
   color: #0f0d0e;
   font-weight: 700;
   text-align: center;
@@ -360,7 +362,8 @@ body {
   width: 66px;
   height: 3px;
   top: 30px;
-  right: 102px;
+  left: 50%;
+  transform: translate( -50%, 0%)
 }
 
 .posts-list-item {
@@ -380,7 +383,7 @@ body {
 
 .post-date {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1em;
   color: #000000;
   font-weight: 400;
   display: block;
@@ -389,7 +392,7 @@ body {
 
 .post-header {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3em;
   color: #000000;
   font-weight: 700;
   text-decoration: none;
@@ -400,9 +403,12 @@ body {
   color: #b59f5b;
 }
 
+.search-form {
+  margin-top: 60px;
+}
+
 .search {
   display: flex;
-  margin-top: 60px;
 }
 
 .search-text { 
@@ -419,7 +425,9 @@ body {
   border-radius: 0;
   background-color: #f4f7f6;
   padding-left: 20px;
+  padding-right: 10px;
   width: 220px;
+  height: 100%;
 }
 
 .search-bar:focus {
@@ -478,6 +486,7 @@ body {
   border-radius: 0;
   background-color: #f4f7f6;
   padding-left: 20px;
+  padding-right: 20px;
   width: 270px;
   height: 50px;
   margin-top: 10px;
@@ -500,7 +509,7 @@ body {
   height: 50px;
   margin-top: 20px;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 2.8em;
   color: #ffffff;
   font-weight: 700;
 }
@@ -538,7 +547,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.2em;
   color: #0f0d0e;
   font-weight: 700;
 }
@@ -564,10 +573,10 @@ body {
 .theme-link {
   text-decoration: none;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.5em;
   color: #000000;
   font-weight: 700;
-  padding-right: 7px;
+  margin-right: 7px;
 }
 
 .theme-link:hover {
@@ -576,19 +585,20 @@ body {
 
 .theme-number {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1em;
   color: #b59f5b;
   font-weight: 700;
   position: absolute;
 }
 
+.shop {
+  width: 1170px;
+  margin: 0 auto 65px;
+}
+
 .shop-products {
   display: flex;
   justify-content: space-between;
-  width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto 65px;
 }
 
 .product {
@@ -617,14 +627,14 @@ body {
 .product-header {
   text-transform: uppercase;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2em;
   color: #0f0d0e;
   font-weight: 700;
 }
 
 .product-description {
   font-size: 15px;
-  line-height: 22px;
+  line-height: 1.5em;
   color: #0f0d0e;
   font-weight: 400;
   margin-top: 10px;
@@ -649,7 +659,7 @@ body {
 
 .price-old {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7em;
   text-decoration: line-through;
   color: #0f0d0e;
   font-weight: 700;
@@ -661,7 +671,7 @@ body {
 
 .price-new {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2em;
   color: #0f0d0e;
   font-weight: 700;
 }
@@ -689,8 +699,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -720,7 +729,7 @@ body {
 
 .icon {
   display: block;
-	padding: 5px;
+	margin: 5px;
   width: 40px;
   height: 40px;
   background-size: 25px;
@@ -756,13 +765,12 @@ body {
 }
 
 .copyright {
-  margin: 70px auto 30px;
+  margin: 70px auto;
 }
 
 .copyright-text {
   text-decoration: none;
   font-size: 12px;
-  line-height: 40px;
   color: #999999;
   font-weight: 700;
   display: flex;
@@ -829,7 +837,12 @@ body {
 
   .header-title {
     font-size: 40px;
-    line-height: 55px;
+    line-height: 1.4em;
+    width: 84%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
 
   .trends-header,
@@ -842,6 +855,7 @@ body {
   }
 
   .trends-card {
+    box-sizing: border-box;
     width: 49.75%;
     margin-bottom: 0.5%;
   }
@@ -850,12 +864,17 @@ body {
     font-size: 17px;
   }
 
-  .trends-card:nth-child(n+1) {
+  .trends-card:nth-child(odd) {
     margin-left: 0;
   }
 
   .trends-card:nth-child(even) {
-    margin-left: 0.5%
+    margin-left: 0.5%;
+    margin-right: 0;
+  }
+
+  .trends-card-content {
+    width: 100%;
   }
 
   .content {
@@ -866,7 +885,7 @@ body {
 
   .main-content {
     width: 55%;
-    padding-right: 3%;
+    margin-right: 1%;
   }
 
   .article {
@@ -893,7 +912,7 @@ body {
 
   .article-title-link {
     font-size: 17px;
-    line-height: 22px;
+    line-height: 1.3em;
   }
 
   .signature {
@@ -904,11 +923,27 @@ body {
     margin-top: 25px;
   }
 
+  .shop {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
   .shop-products {
     flex-wrap: wrap;
-    width: 92%;
-    padding-left: 4%;
-    padding-right: 4%;
+  }
+
+  .product {
+    min-width: 34%;
+    max-width: 48.5%;
+  }
+
+  .product:nth-child(2n+2) {
+    margin-left: 1.5%;
+  }
+
+  .product:nth-child(2n+1) {
+    margin-right: 1.5%;
   }
 
   .product:nth-child(n+3) {
@@ -916,17 +951,363 @@ body {
   }
 
   .product-image {
-    width: 292px;
-    height: 227px;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
   }
 
   .product-info {
-    width: 292px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 335px;
   }
 
   .footer {
     width: 92%;
-    padding-left: 4%;
-    padding-right: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
 }
+
+@media (max-width: 640px) {
+  .header {
+    background-image: url(../images/banner-mobile.jpg);
+    padding-bottom: 220px;
+  }
+
+  .header-container {
+    position: relative;
+  }
+
+  .header-logo {
+    width: 270px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+  .menu-button {
+    position: absolute;
+    top: 0;
+    right: 4%;
+  }
+
+  .header-title {
+    margin-top: 45px;
+    font-size: 26px;
+  }
+
+  .trends-header,
+  .shop-header {
+    font-size: 16px;
+  }
+
+  .trends-card {
+    width: 100%;
+    min-height: 230px;
+  }
+
+  .trends-card:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .trends-card-link {
+    font-size: 16px;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+
+  .main-content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .article:nth-child(n+2) {
+    margin-top: 25px;
+  }
+
+  .article-title-link {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .sidebar {
+    margin-top: 45px;
+    width: 100%;
+  }
+
+  .posts-list-header, 
+  .mailing-header, 
+  .tags-sidebar-header, 
+  .themes-header {
+    font-size: 16px;
+  }
+
+  .search-label,
+  .search-bar,
+  .email,
+  .subscribe {
+    width: 100%;
+  }
+
+  .mailing-form,
+  .tags-sidebar,
+  .themes {
+    margin-top: 45px;
+  }
+
+  .product {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .product:nth-child(2n+2) {
+    margin-left: 0;
+  }
+
+  .product:nth-child(2n+1) {
+    margin-right: 0;
+  }
+
+  .product:nth-child(n+2) {
+    margin-top: 30px;
+  }
+
+  .product-image {
+    width: 82vw;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .product-info {
+    max-width: 100%;
+  }
+
+  .product-header {
+    font-size: 17px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 640px) {
+  .trends-card {
+    box-sizing: border-box;
+    width: 49.75%;
+    margin-bottom: 0.5%;
+  }
+
+  .trends-card:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  .trends-card:nth-child(even) {
+    margin-left: 0.5%;
+    margin-right: 0;
+  }
+}
+
+/*
+body {
+  overflow: hidden;
+
+}
+
+.dark-popup-background {
+  width: 100%;
+  min-height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  position: fixed;
+  top:0px;
+  z-index: 1;
+}
+
+.background-popup {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px; 
+  width: 1px; 
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 330px;
+  height: 590px;
+  background-color: #fff;
+  opacity: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  z-index: 2;
+  padding: 45px 30px;
+}
+
+.popup:before {
+  content: "";
+  background-image: url(../svg/form-x.svg);
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.popup-header {
+  font-size: 20px;
+  color: #0f0d0e;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.popup-header:after {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  top: 37px;
+  left: 50%;
+  transform: translate( -50%, 0%)
+}
+
+.survey {
+  margin-top: 35px;
+}
+
+.survey-visit-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.survey-quest {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.select-freq {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f4f7f6;
+  height: 50px;
+  border: 0;
+  background-image: url(../svg/form-arrows.svg);
+  background-size: auto 15px;
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  font-family: inherit;
+  padding-left: 20px;
+}
+
+.select-freq:focus,
+.survey-content-textarea:focus {
+  border: 1px solid #b59f5b;
+  outline: none;
+}
+
+.survey-email-group {
+  margin-top: 27px;
+  font-size: 13px;
+}
+
+.email-radio-group {
+  display: inline-block;
+}
+
+.email-radio-group:nth-of-type(n+2) {
+  margin-left: 15px;
+}
+
+.email-radio {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px; 
+  width: 1px; 
+}
+
+.email-radio:checked ~ .email-radio-text:before {
+  background-image: url("../svg/form-circle.svg");
+}
+
+.email-radio-text:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+
+  background-image: url("../svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center  center;
+  background-size: 15px;
+}
+
+.survey-content-group {
+  margin-top: 27px;
+}
+
+.survey-content-textarea {
+  min-width: 100%;
+  min-height: 130px;
+  max-height: 130px;
+  font-family: inherit;
+  box-sizing: border-box;
+  border: none;
+  padding: 20px;
+  background-color: #f4f7f6;
+}
+
+.send {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  background-color: #b59f5b;
+}
+
+@media (max-width: 1199px) {
+  .popup-header {
+    font-size: 18px;
+  }
+
+  .email-radio-text:before {
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  .popup {
+    height: 550px;
+    padding-top: 30px;
+    padding-bottom: 30px: 
+  }
+
+  .popup:before {
+    top: -25px;
+  }
+
+  .popup-header {
+    font-size: 16px;
+  }
+}*/
