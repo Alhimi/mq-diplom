@@ -640,6 +640,13 @@ body {
   margin-top: 25px;
 }
 
+.buy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
 .price-old {
   font-size: 14px;
   text-decoration: line-through;
@@ -657,7 +664,7 @@ body {
   font-weight: 700;
 }
 
-.buy {
+.buy-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-transform: uppercase;
@@ -672,7 +679,7 @@ body {
   font-weight: 700;
 }
 
-.buy:hover {
+.buy-button:hover {
   background-color: #323232;
 }
 
